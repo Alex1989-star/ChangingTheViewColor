@@ -14,13 +14,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var greenSlider: UISlider!
     
     @IBOutlet weak var blueSlider: UISlider!
-    
     @IBOutlet weak var meinView: UIView!
     
     @IBOutlet weak var numberLabelRed: UILabel!
-    
+
     @IBOutlet weak var numberLabelGreen: UILabel!
-    
+
     @IBOutlet weak var numberLabelBlue: UILabel!
     
     override func viewDidLoad() {
@@ -31,15 +30,17 @@ class ViewController: UIViewController {
         
         redSlider.maximumValue = 1
         redSlider.minimumValue = 0
-        numberLabelRed.font = numberLabelRed.font.withSize(20)
+        numberLabelRed.font =
+            numberLabelRed.font.withSize(17)
+        
         
         greenSlider.maximumValue = 1
         greenSlider.minimumValue = 0
-        numberLabelGreen.font = numberLabelGreen.font.withSize(20)
+        numberLabelGreen.font = numberLabelGreen.font.withSize(17)
         
         blueSlider.maximumValue = 1
         blueSlider.minimumValue = 0
-        numberLabelBlue.font = numberLabelBlue.font.withSize(20)
+        numberLabelBlue.font = numberLabelBlue.font.withSize(17)
         
         
         
