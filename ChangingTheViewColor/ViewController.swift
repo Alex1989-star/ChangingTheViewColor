@@ -22,6 +22,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var numberLabelBlue: UILabel!
     
+    @IBOutlet weak var opacitySlider: UISlider!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -51,10 +53,14 @@ class ViewController: UIViewController {
         blueSlider.thumbTintColor = .blue
         blueSlider.maximumTrackTintColor = .opaqueSeparator
         
+        opacitySlider.thumbTintColor = .darkGray
+        opacitySlider.maximumTrackTintColor = .opaqueSeparator
+        opacitySlider.tintColor = .darkGray
+        
     }
     
     func changeColors() {
-        meinView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
+        meinView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: CGFloat(opacitySlider.value))
     }
     
     @IBAction func redSliderChangedColor() {
@@ -74,7 +80,10 @@ class ViewController: UIViewController {
         numberLabelBlue.text = String(format: "%.2f", blueSlider.value)
         changeColors()
         
-        
+    }
+    
+    @IBAction func opacitySliderChangedColor() {
+        changeColors()
     }
     
 }

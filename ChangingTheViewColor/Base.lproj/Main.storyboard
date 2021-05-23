@@ -33,6 +33,7 @@
                                         <rect key="frame" x="-2" y="0.0" width="263" height="31"/>
                                         <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                                         <color key="maximumTrackTintColor" systemColor="opaqueSeparatorColor"/>
+                                        <color key="thumbTintColor" systemColor="systemRedColor"/>
                                         <connections>
                                             <action selector="redSliderChangedColor" destination="BYZ-38-t0r" eventType="valueChanged" id="Sbg-mR-krL"/>
                                         </connections>
@@ -41,6 +42,7 @@
                                         <rect key="frame" x="-2" y="55" width="263" height="31"/>
                                         <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                         <color key="maximumTrackTintColor" systemColor="opaqueSeparatorColor"/>
+                                        <color key="thumbTintColor" systemColor="systemGreenColor"/>
                                         <connections>
                                             <action selector="greenSliderChangedColor" destination="BYZ-38-t0r" eventType="valueChanged" id="l6t-pg-NFL"/>
                                         </connections>
@@ -49,6 +51,7 @@
                                         <rect key="frame" x="-2" y="110" width="263" height="31"/>
                                         <color key="minimumTrackTintColor" name="AccentColor"/>
                                         <color key="maximumTrackTintColor" systemColor="opaqueSeparatorColor"/>
+                                        <color key="thumbTintColor" systemColor="systemBlueColor"/>
                                         <connections>
                                             <action selector="blieSliderChangedColor" destination="BYZ-38-t0r" eventType="valueChanged" id="tuD-RW-UR5"/>
                                         </connections>
@@ -96,16 +99,32 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="BAM-YU-VAV">
+                                <rect key="frame" x="145" y="411" width="255" height="31"/>
+                                <connections>
+                                    <action selector="opacitySliderChangedColor" destination="BYZ-38-t0r" eventType="valueChanged" id="ZgS-U3-s7c"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opacity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Gg-aP-Ti5">
+                                <rect key="frame" x="12" y="415" width="66" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eEY-44-Nhh" secondAttribute="trailing" constant="12" id="2Ov-HH-XIA"/>
+                            <constraint firstItem="BAM-YU-VAV" firstAttribute="leading" secondItem="9Gg-aP-Ti5" secondAttribute="trailing" constant="69" id="2qf-el-UaG"/>
                             <constraint firstItem="gf7-dX-PHz" firstAttribute="leading" secondItem="fzG-Aa-apF" secondAttribute="trailing" constant="24.5" id="4Id-dz-B2Y"/>
                             <constraint firstItem="eEY-44-Nhh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="143" id="5K3-NP-vAD"/>
                             <constraint firstItem="hJw-Fu-PtM" firstAttribute="top" secondItem="ERI-XX-Z7u" secondAttribute="bottom" constant="39" id="7oe-YR-VJM"/>
+                            <constraint firstItem="BAM-YU-VAV" firstAttribute="top" secondItem="eEY-44-Nhh" secondAttribute="bottom" constant="24" id="DKE-HN-PFn"/>
                             <constraint firstItem="hJw-Fu-PtM" firstAttribute="leading" secondItem="fzG-Aa-apF" secondAttribute="trailing" constant="24.5" id="NOj-XN-5TV"/>
                             <constraint firstItem="fzG-Aa-apF" firstAttribute="top" secondItem="whr-z0-TLD" secondAttribute="bottom" constant="51" id="RVo-AC-0Sy"/>
+                            <constraint firstItem="BAM-YU-VAV" firstAttribute="leading" secondItem="9Gg-aP-Ti5" secondAttribute="trailing" constant="69" id="Sj4-fK-jFF"/>
+                            <constraint firstItem="9Gg-aP-Ti5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="U7z-8o-Lw3"/>
                             <constraint firstItem="whr-z0-TLD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="UWY-4O-8Zb"/>
                             <constraint firstItem="gf7-dX-PHz" firstAttribute="top" secondItem="hJw-Fu-PtM" secondAttribute="bottom" constant="39" id="Y3X-14-nmr"/>
                             <constraint firstItem="fzG-Aa-apF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="ZCO-q5-u41"/>
@@ -113,9 +132,11 @@
                             <constraint firstItem="whr-z0-TLD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="ekX-Af-R8m"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="whr-z0-TLD" secondAttribute="trailing" constant="28" id="f4E-5v-0tP"/>
                             <constraint firstItem="hJw-Fu-PtM" firstAttribute="top" secondItem="ERI-XX-Z7u" secondAttribute="bottom" constant="39" id="jPK-o1-uqA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BAM-YU-VAV" secondAttribute="trailing" constant="16" id="kL3-os-qGl"/>
                             <constraint firstItem="eEY-44-Nhh" firstAttribute="top" secondItem="whr-z0-TLD" secondAttribute="bottom" constant="51" id="mgY-g9-PIv"/>
                             <constraint firstItem="gf7-dX-PHz" firstAttribute="top" secondItem="hJw-Fu-PtM" secondAttribute="bottom" constant="39" id="wdK-st-Nf1"/>
                             <constraint firstItem="ERI-XX-Z7u" firstAttribute="leading" secondItem="fzG-Aa-apF" secondAttribute="trailing" constant="24.5" id="wwD-KV-6bR"/>
+                            <constraint firstItem="9Gg-aP-Ti5" firstAttribute="top" secondItem="fzG-Aa-apF" secondAttribute="bottom" constant="29" id="ybj-pq-Zcu"/>
                         </constraints>
                     </view>
                     <connections>
@@ -125,6 +146,7 @@
                         <outlet property="numberLabelBlue" destination="gf7-dX-PHz" id="2M7-Pv-oIK"/>
                         <outlet property="numberLabelGreen" destination="hJw-Fu-PtM" id="hJW-ve-2aR"/>
                         <outlet property="numberLabelRed" destination="ERI-XX-Z7u" id="2bd-uK-QRC"/>
+                        <outlet property="opacitySlider" destination="BAM-YU-VAV" id="0tz-Aw-LzQ"/>
                         <outlet property="redSlider" destination="uqh-Fh-65m" id="cn8-Ps-sIE"/>
                     </connections>
                 </viewController>
@@ -139,6 +161,9 @@
         </namedColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
