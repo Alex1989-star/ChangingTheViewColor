@@ -18,9 +18,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="whr-z0-TLD">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="whr-z0-TLD">
                                 <rect key="frame" x="28" y="68" width="358" height="128"/>
-                                <color key="backgroundColor" red="0.13471401210398881" green="0.050125242185130814" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="1KY-ry-DqD"/>
                                 </constraints>
@@ -31,6 +32,7 @@
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="uqh-Fh-65m" userLabel="Red Slider">
                                         <rect key="frame" x="-2" y="0.0" width="263" height="31"/>
                                         <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
+                                        <color key="maximumTrackTintColor" systemColor="opaqueSeparatorColor"/>
                                         <connections>
                                             <action selector="redSliderChangedColor" destination="BYZ-38-t0r" eventType="valueChanged" id="Sbg-mR-krL"/>
                                         </connections>
@@ -38,6 +40,7 @@
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="9jI-Uh-xci" userLabel="Green Slider">
                                         <rect key="frame" x="-2" y="55" width="263" height="31"/>
                                         <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
+                                        <color key="maximumTrackTintColor" systemColor="opaqueSeparatorColor"/>
                                         <connections>
                                             <action selector="greenSliderChangedColor" destination="BYZ-38-t0r" eventType="valueChanged" id="l6t-pg-NFL"/>
                                         </connections>
@@ -45,6 +48,7 @@
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="EwW-cw-oLy" userLabel="Blue Slider">
                                         <rect key="frame" x="-2" y="110" width="263" height="31"/>
                                         <color key="minimumTrackTintColor" name="AccentColor"/>
+                                        <color key="maximumTrackTintColor" systemColor="opaqueSeparatorColor"/>
                                         <connections>
                                             <action selector="blieSliderChangedColor" destination="BYZ-38-t0r" eventType="valueChanged" id="tuD-RW-UR5"/>
                                         </connections>
@@ -133,6 +137,9 @@
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
