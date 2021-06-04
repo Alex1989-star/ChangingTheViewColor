@@ -13,6 +13,7 @@
 		CF4668A22657AEF800B83669 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF4668A02657AEF800B83669 /* Main.storyboard */; };
 		CF4668A42657AEFD00B83669 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF4668A32657AEFD00B83669 /* Assets.xcassets */; };
 		CF4668A72657AEFD00B83669 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF4668A52657AEFD00B83669 /* LaunchScreen.storyboard */; };
+		CF4A721E266A0AAE007D52F3 /* MeinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A721D266A0AAE007D52F3 /* MeinViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CF4668A32657AEFD00B83669 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF4668A62657AEFD00B83669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF4668A82657AEFD00B83669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF4A721D266A0AAE007D52F3 /* MeinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeinViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		CF4668992657AEF800B83669 /* ChangingTheViewColor */ = {
 			isa = PBXGroup;
 			children = (
-				CF46689A2657AEF800B83669 /* AppDelegate.swift */,
-				CF46689C2657AEF800B83669 /* SceneDelegate.swift */,
-				CF46689E2657AEF800B83669 /* ViewController.swift */,
-				CF4668A02657AEF800B83669 /* Main.storyboard */,
-				CF4668A32657AEFD00B83669 /* Assets.xcassets */,
-				CF4668A52657AEFD00B83669 /* LaunchScreen.storyboard */,
-				CF4668A82657AEFD00B83669 /* Info.plist */,
+				CF4A721C266A0A89007D52F3 /* Resources */,
+				CF4A721B266A0A66007D52F3 /* SupportingFiles */,
+				CF4A721A266A0A41007D52F3 /* Storyboards */,
+				CF4A7219266A0A27007D52F3 /* ViewControllers */,
 			);
 			path = ChangingTheViewColor;
+			sourceTree = "<group>";
+		};
+		CF4A7219266A0A27007D52F3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CF4A721D266A0AAE007D52F3 /* MeinViewController.swift */,
+				CF46689E2657AEF800B83669 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CF4A721A266A0A41007D52F3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CF4668A52657AEFD00B83669 /* LaunchScreen.storyboard */,
+				CF4668A02657AEF800B83669 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CF4A721B266A0A66007D52F3 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CF4668A82657AEFD00B83669 /* Info.plist */,
+				CF46689C2657AEF800B83669 /* SceneDelegate.swift */,
+				CF46689A2657AEF800B83669 /* AppDelegate.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		CF4A721C266A0A89007D52F3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CF4668A32657AEFD00B83669 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +175,7 @@
 				CF46689F2657AEF800B83669 /* ViewController.swift in Sources */,
 				CF46689B2657AEF800B83669 /* AppDelegate.swift in Sources */,
 				CF46689D2657AEF800B83669 /* SceneDelegate.swift in Sources */,
+				CF4A721E266A0AAE007D52F3 /* MeinViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +324,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59U3Y8MDY6;
-				INFOPLIST_FILE = ChangingTheViewColor/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ChangingTheViewColor/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -308,7 +344,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59U3Y8MDY6;
-				INFOPLIST_FILE = ChangingTheViewColor/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ChangingTheViewColor/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

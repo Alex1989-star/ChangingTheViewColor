@@ -10,44 +10,39 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var redSlider: UISlider!
-    
     @IBOutlet weak var greenSlider: UISlider!
-    
     @IBOutlet weak var blueSlider: UISlider!
+    
     @IBOutlet weak var meinView: UIView!
     
     @IBOutlet weak var numberLabelRed: UILabel!
-
     @IBOutlet weak var numberLabelGreen: UILabel!
-
     @IBOutlet weak var numberLabelBlue: UILabel!
     
     @IBOutlet weak var opacitySlider: UISlider!
+    
+    //var delegate: ViewControllerDelegate!
+    var color: UIColor!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         meinView.layer.cornerRadius = 10
         
-        
-        redSlider.maximumValue = 1
-        redSlider.minimumValue = 0
         numberLabelRed.font =
             numberLabelRed.font.withSize(17)
         
         redSlider.thumbTintColor = .red
         redSlider.maximumTrackTintColor = .opaqueSeparator
         
-        
-        greenSlider.maximumValue = 1
-        greenSlider.minimumValue = 0
+ 
         numberLabelGreen.font = numberLabelGreen.font.withSize(17)
         
         greenSlider.thumbTintColor = .green
         greenSlider.maximumTrackTintColor = .opaqueSeparator
         
-        blueSlider.maximumValue = 1
-        blueSlider.minimumValue = 0
+        
         numberLabelBlue.font = numberLabelBlue.font.withSize(17)
         
         blueSlider.thumbTintColor = .blue
@@ -59,7 +54,7 @@ class ViewController: UIViewController {
         
     }
     
-    func changeColors() {
+    private func changeColors() {
         meinView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: CGFloat(opacitySlider.value))
     }
     
@@ -67,24 +62,21 @@ class ViewController: UIViewController {
         numberLabelRed.text = String(format: "%.2f", redSlider.value)
         
         changeColors()
-    
     }
     
     @IBAction func greenSliderChangedColor() {
         numberLabelGreen.text = String(format: "%.2f", greenSlider.value)
+    
         changeColors()
     }
-    
     
     @IBAction func blieSliderChangedColor() {
         numberLabelBlue.text = String(format: "%.2f", blueSlider.value)
         changeColors()
-        
     }
     
     @IBAction func opacitySliderChangedColor() {
         changeColors()
     }
-    
 }
 
