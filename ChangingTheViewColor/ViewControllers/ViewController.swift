@@ -93,7 +93,7 @@ class ColorSetupViewController: UIViewController {
     }
     
     @IBAction func doneButtonPressed(_ sender: Any) {
-        delegate.setupViewColor(meinView.backgroundColor!)
+        delegate.setupViewColor(meinView.backgroundColor ?? .cyan)
         dismiss(animated: true, completion: nil)
     }
     
@@ -115,12 +115,12 @@ class ColorSetupViewController: UIViewController {
         redSlider.value = Float(components[0])
         greenSlider.value = Float(components[1])
         blueSlider.value = Float(components[2])
+        opacitySlider.value = Float(components[3])
         setSliders()
         setTextFileds()
         changeColors()
     }
 }
-
 extension ColorSetupViewController {
     private func addDoneButtonTo(_ textField: UITextField) {
         
@@ -155,5 +155,9 @@ extension ColorSetupViewController {
         present(alert, animated: true)
     }
 }
+
+
+
+
 
 
