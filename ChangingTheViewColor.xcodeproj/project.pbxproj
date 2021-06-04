@@ -14,6 +14,8 @@
 		CF4668A42657AEFD00B83669 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF4668A32657AEFD00B83669 /* Assets.xcassets */; };
 		CF4668A72657AEFD00B83669 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF4668A52657AEFD00B83669 /* LaunchScreen.storyboard */; };
 		CF4A721E266A0AAE007D52F3 /* MeinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A721D266A0AAE007D52F3 /* MeinViewController.swift */; };
+		CF4A7226266A1DD0007D52F3 /* ColorSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A7225266A1DD0007D52F3 /* ColorSetupViewController.swift */; };
+		CF4A722A266A1E7B007D52F3 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A7229266A1E7B007D52F3 /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		CF4668A62657AEFD00B83669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF4668A82657AEFD00B83669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF4A721D266A0AAE007D52F3 /* MeinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeinViewController.swift; sourceTree = "<group>"; };
+		CF4A7225266A1DD0007D52F3 /* ColorSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSetupViewController.swift; sourceTree = "<group>"; };
+		CF4A7229266A1E7B007D52F3 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 		CF4668992657AEF800B83669 /* ChangingTheViewColor */ = {
 			isa = PBXGroup;
 			children = (
+				CF4A7228266A1E5B007D52F3 /* Extension */,
+				CF4A7224266A1DB6007D52F3 /* Protocols */,
 				CF4A721C266A0A89007D52F3 /* Resources */,
 				CF4A721B266A0A66007D52F3 /* SupportingFiles */,
 				CF4A721A266A0A41007D52F3 /* Storyboards */,
@@ -100,6 +106,22 @@
 				CF4668A32657AEFD00B83669 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		CF4A7224266A1DB6007D52F3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CF4A7225266A1DD0007D52F3 /* ColorSetupViewController.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CF4A7228266A1E5B007D52F3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CF4A7229266A1E7B007D52F3 /* Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +196,8 @@
 			files = (
 				CF46689F2657AEF800B83669 /* ViewController.swift in Sources */,
 				CF46689B2657AEF800B83669 /* AppDelegate.swift in Sources */,
+				CF4A7226266A1DD0007D52F3 /* ColorSetupViewController.swift in Sources */,
+				CF4A722A266A1E7B007D52F3 /* Extension.swift in Sources */,
 				CF46689D2657AEF800B83669 /* SceneDelegate.swift in Sources */,
 				CF4A721E266A0AAE007D52F3 /* MeinViewController.swift in Sources */,
 			);
