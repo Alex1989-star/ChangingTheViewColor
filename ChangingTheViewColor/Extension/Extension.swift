@@ -29,15 +29,17 @@ extension ColorSetupViewController: UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         switch textField {
         case redTextField:
-            dataTranmision(from: redTextField, to: redSlider)
+            dataTransmision(from: redTextField, to: redSlider, to: numberLabelRed)
         case greenTextField:
-            dataTranmision(from: greenTextField, to: greenSlider)
+            dataTransmision(from: greenTextField, to: greenSlider, to: numberLabelGreen)
         case blueTextField:
-            dataTranmision(from: blueTextField, to: blueSlider)
+            dataTransmision(from: blueTextField, to: blueSlider, to: numberLabelBlue)
         default:
             return
         }
     }
+    
+    
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
@@ -50,7 +52,7 @@ extension ColorSetupViewController: UITextFieldDelegate {
         return true
     }
 
-     func dataTranmision(from textField: UITextField, to slider: UISlider) {
+    func dataTransmision(from textField: UITextField, to slider: UISlider, to label: UILabel) {
         guard let textInput = textField.text else { return }
         guard let value = Float(textInput) else {
             allertController()
@@ -58,12 +60,14 @@ extension ColorSetupViewController: UITextFieldDelegate {
         }
         if value >= 0 && value <= 1 {
             slider.value = value
+            label.text = String(value)
             changeColors()
         } else {
             allertController()
         }
     }
 }
+
 
 
 
