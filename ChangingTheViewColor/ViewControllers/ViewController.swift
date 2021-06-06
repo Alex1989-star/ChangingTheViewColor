@@ -62,7 +62,9 @@ class ColorSetupViewController: UIViewController {
         addDoneButtonTo(greenTextField)
         addDoneButtonTo(blueTextField)
         
-        //setTextFileds()
+        redTextField.keyboardType = .numberPad
+        greenTextField.keyboardType = .numberPad
+        blueTextField.keyboardType = .numberPad
     }
     
      func changeColors() {
